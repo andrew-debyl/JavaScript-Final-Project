@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Inter', sans-serif; 
+}
+
+.no-cursor{
+    cursor: not-allowed;
+}
+
+/* ----- NAV ----- */
+
+#nav__bar {
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding: 36px 48px;
+}
+
+.nav__container, .body__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__headers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__header--logo {
+    color: white;
+    font-size: 34px;
+}
+
+.nav__header--list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__header--link {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav__header--item {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 300ms;
+}
+
+.nav__header--item:hover {
+    border-color: white;
+}
+
+.nav-contact {
+    padding: 12px 16px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.nav-contact:hover {
+    box-shadow: 0 12px 30px 0 rgb(82, 82, 82);
+}
+
+.nav-contact--link {
+    color: #302b63;
+    font-weight: 700;
+}
+
+.nav__header--search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 0 36px 0;
+}
+
+.nav__title {
+    color: white;
+    font-size: 36px;
+}
+
+.nav__header-input--wrapper{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.nav__search-bar {
+    margin: 18px 0;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    text-align: left;
+    height: 48px;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.nav__header--clicker {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 0 20px 0 8px;
+    color: #302b63;
+    font-size: 32px;
+    right: 1px;
+    top: 24px;
+}
+
+
+/* ----- BODY ----- */
+
+#body {
+    padding: 48px;
+}
+
+.body__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.body__movie {
+    padding: 24px;
+}
+
