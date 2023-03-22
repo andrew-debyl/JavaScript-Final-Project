@@ -90,7 +90,7 @@
 }
 
 .nav__search-bar {
-    margin: 18px 0;
+    margin: 34px 0;
     width: 100%;
     max-width: 600px;
     border-radius: 15px;
@@ -108,7 +108,16 @@
     color: #302b63;
     font-size: 32px;
     right: 1px;
-    top: 24px;
+    top: 39px;
+    transition: all 300ms ease;
+}
+
+.nav__header--clicker:hover {
+    transform: scale(1.1);
+}
+
+.nav__header--clicker:active{
+    transform: scale(0.75);
 }
 
 
@@ -129,3 +138,31 @@
     padding: 24px;
 }
 
+.body__about {
+    margin-top: 12px;
+    max-width: 300px;
+    font-size: 20px;     
+}
+
+.body__img--wrapper {
+    transition: all 300ms ease;
+}
+
+.body__img--wrapper:hover {
+    filter: brightness(80%);
+    transform: scale(1.03);
+}
+
+.error-message {
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.error--title {
+    font-size: 26px;
+}
+
+.error--movie-name {
+    font-weight: 700;
+    color: red;
+}
