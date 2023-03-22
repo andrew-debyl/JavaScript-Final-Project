@@ -2,7 +2,7 @@ const moviesListEl = document.querySelector(".body__container");
 
 async function main(keyword) {    
     let link = "http://www.omdbapi.com/?i=tt3896198&apikey=7ba85e40&s=" + keyword;
-    
+
     const movies = await fetch(link);
     const moviesData = await movies.json();
 
@@ -11,7 +11,7 @@ async function main(keyword) {
     }
     else if (moviesData.Response === "True") {
         moviesListEl.innerHTML = moviesData.Search.map((movie) => moviesHTML(movie)).slice(0,6).join("");
-    }  
+    }      
 }
 
 
@@ -28,6 +28,17 @@ function onClick() {
 
 
 function moviesHTML(movies) {
+    if(movies.Poster === "N/A"){
+        return `<div class="body__movie">
+        <div class="body__img--wrapper">
+            <img class="body__img" src="./assets/noimage.png" alt="">
+        </div>
+        <div class="body__about--wrapper">
+            <h3 class="body__about">${movies.Title} - ${movies.Year}</h3>
+        </div>
+    </div>`
+    }
+
     return `<div class="body__movie">
     <div class="body__img--wrapper">
         <img class="body__img" src="${movies.Poster}" alt="">

@@ -153,6 +153,10 @@
     transform: scale(1.03);
 }
 
+.body__img{
+    max-width: 300px;
+}
+
 .error-message {
     margin: 0 auto;
     margin-top: 48px;
